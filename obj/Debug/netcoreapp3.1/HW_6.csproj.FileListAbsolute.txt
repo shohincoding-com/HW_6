@@ -5,9 +5,7 @@ C:\Users\SHOHIN\Desktop\c#_projects\HW_6\bin\Debug\netcoreapp3.1\HW_6.runtimecon
 C:\Users\SHOHIN\Desktop\c#_projects\HW_6\bin\Debug\netcoreapp3.1\HW_6.dll
 C:\Users\SHOHIN\Desktop\c#_projects\HW_6\bin\Debug\netcoreapp3.1\HW_6.pdb
 C:\Users\SHOHIN\Desktop\c#_projects\HW_6\obj\Debug\netcoreapp3.1\HW_6.csprojAssemblyReference.cache
-C:\Users\SHOHIN\Desktop\c#_projects\HW_6\obj\Debug\netcoreapp3.1\HW_6.csproj.CoreCompileInputs.cache
 C:\Users\SHOHIN\Desktop\c#_projects\HW_6\obj\Debug\netcoreapp3.1\HW_6.AssemblyInfoInputs.cache
 C:\Users\SHOHIN\Desktop\c#_projects\HW_6\obj\Debug\netcoreapp3.1\HW_6.AssemblyInfo.cs
 C:\Users\SHOHIN\Desktop\c#_projects\HW_6\obj\Debug\netcoreapp3.1\HW_6.dll
 C:\Users\SHOHIN\Desktop\c#_projects\HW_6\obj\Debug\netcoreapp3.1\HW_6.pdb
-C:\Users\SHOHIN\Desktop\c#_projects\HW_6\obj\Debug\netcoreapp3.1\HW_6.genruntimeconfig.cache

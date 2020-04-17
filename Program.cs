@@ -8,104 +8,87 @@ namespace HW_6
         static void Main(string[] args)
         {
             //Task_2
-            Console.Write("N = ");
+            Console.Write("Введите значение массива!!!\nN= ");
             int N;
             N = int.Parse(Console.ReadLine());
-            int[] arrey = new int[N];
-            for(int i = 0; i < arrey.Length; i++){
-                arrey[i]=new Random().Next(50);
-                Console.Write($"{arrey[i]} ");
+            int[] massiv = new int[N];
+
+            for(int i=0; i<massiv.Length; i++){
+                massiv[i] = i * i;
+                Console.Write($"{massiv[i]} ");
             }
-            Console.WriteLine($"\nMaxValue = {arrey.Max()}");
-            Console.WriteLine($"MinValue = {arrey.Min()}");
-            Console.WriteLine($"SumValue = {arrey.Sum()}");
-            Console.WriteLine($"Avarage = {arrey.Average()}");
-            for(int i = 0; i < arrey.Length; i++)
+
+            Console.WriteLine($"\nМаксимальная значения массив = {massiv.Max()}");
+            Console.WriteLine($"\nМинимальная значения массив = {massiv.Min()}");  
+            Console.WriteLine($"\nСумма значеные массив = {massiv.Sum()}");  
+            Console.WriteLine($"\nСредное арифметиеческое всех элементов = {massiv.Average()}"); 
+
+            for(int i=1; i < massiv.Length; i++)
             {
-                if(arrey[i] % 2 == 1)
+                if(massiv[i] % 2 == 1)
                 {
-                    Console.Write($"{arrey[i]} ");
+                    Console.Write($"{massiv[i]} ");
                 }
-            }
+            }      
             //EndTask_2
 
             //Task_3
-            int[] mas = new int[10];
-            Console.WriteLine("\n\t\t\tArrey");
-            for (int i = 0; i < mas.Length; i++)
+            int[] massiv1 = new int [10];
+            Console.WriteLine("\n\t\tМассив");
+            
+            for (int i = 0; i < massiv1.Length; i++)
             {
-                mas[i] = new Random().Next(10, 20);
-                Console.Write($"{mas[i]}  ");
+                massiv1[i] = i + i;
+                Console.Write($"{massiv1[i]}  ");
             }
-            Console.WriteLine();
-            Array.Reverse(mas);
-            Console.WriteLine("\t\tМассив в обратном порядке");
-            for (int i = 0; i < mas.Length; i++)
+            Array.Reverse(massiv1);
+            Console.WriteLine("\n\tМассив в обратном порядке!!!");
+           
+            for (int i = 0; i < massiv1.Length; i++)
             {
-                 Console.Write($"{mas[i]}  ");
+                Console.Write($"{massiv1[i]}  ");
             }
-            //EndTask_3
+            // //EndTask_3
 
-            //Task_4
-            Console.Write("N = ");
-            int N = int.Parse(Console.ReadLine());
-            int[] arrey = new int[N];
-            for (int i = 0; i < arrey.Length; i++)
+            // //Task_4
+            Console.Write("\nВведите количество значеные массива!\nN = ");
+            int N2 = int.Parse(Console.ReadLine());
+            int[] massiv2 = new int[N2];
+            
+            for (int i = 0; i < massiv2.Length; i++)
             {
-                arrey[i] = new Random().Next(50);
-                Console.Write($"{arrey[i]}  ");
-            }
-            Console.Write("\ncount: ");
-            int count = int.Parse(Console.ReadLine());
-            Console.Write("index: ");
-            int index = int.Parse(Console.ReadLine());
-            Console.WriteLine("\t\t\tНовый массив");
-            int[] arrey2 = new int[count];
-            for (int i = 0; i < arrey2.Length; i++)
-            {
-                if ((index + i) < N)
-                {
-                    arrey2[i] = arrey[index + i];
-                    Console.Write($"{arrey2[i]}  ");
-                }
-                else
-                {
-                    arrey2[i] = 1;
-                    Console.Write($"{arrey2[i]}  ");
-                }
-            }*/
-
-            Console.Write("N = ");
-            int N = int.Parse(Console.ReadLine());
-            int[] arrey = new int[N];
-            for (int i = 0; i < arrey.Length; i++)
-            {
-                arrey[i] = new Random().Next(100);
-                Console.Write($"{arrey[i]}  ");
-            }
-            Console.Write("\ncount: ");
-            int count = int.Parse(Console.ReadLine());
-            Console.Write("index: ");
-            int index = int.Parse(Console.ReadLine());
-            Console.WriteLine("\t\t\tНовый массив");
-            int[] arrey2 = new int[count];
-            for (int i = 0; i < arrey2.Length; i++)
-            {
-                if ((index + i) < N)
-                {
-                    arrey2[i] = arrey[index + i];
-                    Console.Write($"{arrey2[i]}  ");
-                }
-                else
-                {
-                    arrey2[i] = 1;
-                    Console.Write($"{arrey2[i]}  ");
-                }
-            }
-            //EndTask_4
+                massiv2[i] = i + i;
+                Console.Write($"{massiv2[i]}  ");
             }
             
+            Console.Write("\nВведите значение Count = ");
+            int count = int.Parse(Console.ReadLine());
+            
+            Console.Write("Введите значение для Index = ");
+            int index = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Новый массив");
+            
+            int[] massiv3 = new int[count];
+            for(int i = 0; i < massiv3.Length; i++)
+            {
+                if ((index + i) < N2)
+                {
+                    massiv3[i] = massiv2[index + i];
+                    Console.Write($"{massiv3[i]}  ");
+                }
+                else
+                {
+                    massiv3[i] = i*i;
+                    Console.Write($"{massiv3[i]}  ");
+                }
 
+                
+            }
+            //EndTask_4
+        
         }
     }
+
+}
 
